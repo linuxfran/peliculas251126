@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Busca y filtra documentales por categoría en CineMundo.">
+    <title>Documentales | CineMundo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <a class="marca" href="index.html" aria-label="CineMundo, inicio">🎬 CineMundo</a>
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="peliculas.html">Películas</a>
+            <a href="documentales.html" aria-current="page">Documentales</a>
+            <a href="favoritos.html">Favoritos</a>
+        </nav>
+    </header>
+    <main>
+        <p class="sobre-titulo">Aprende algo nuevo</p>
+        <h1>Documentales</h1>
+        <p class="introduccion">Busca por título o explora una categoría.</p>
+        <div class="controles-catalogo">
+            <label class="solo-lectores" for="buscador">Buscar documentales</label>
+            <input type="search" id="buscador" placeholder="Buscar documental...">
+            <label class="solo-lectores" for="filtro">Filtrar por categoría</label>
+            <select id="filtro">
+                <option value="todos">Todas las categorías</option>
+                <option value="Naturaleza">Naturaleza</option>
+                <option value="Historia">Historia</option>
+                <option value="Ciencia">Ciencia</option>
+                <option value="Tecnología">Tecnología</option>
+            </select>
+        </div>
+        <div id="catalogo" class="catalogo"></div>
+    </main>
+    <footer><p>© 2026 CineMundo</p></footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

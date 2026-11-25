@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171526">
+    <meta name="description" content="Encuentra tu próxima película o documental favorito con CineMundo.">
+    <title>CineMundo | Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <a class="marca" href="index.html" aria-label="CineMundo, inicio">🎬 CineMundo</a>
+        <nav aria-label="Navegación principal">
+            <a href="index.html" aria-current="page">Inicio</a>
+            <a href="peliculas.html">Películas</a>
+            <a href="documentales.html">Documentales</a>
+            <a href="favoritos.html">Favoritos</a>
+        </nav>
+    </header>
+    <section class="portada">
+        <p class="sobre-titulo">Historias para cada momento</p>
+        <h1>¿Qué te gustaría ver hoy?</h1>
+        <p>Explora películas y documentales, guarda tus favoritos y deja que CineMundo elija por ti.</p>
+        <a class="boton boton-enlace" href="peliculas.html">Explorar catálogo <span aria-hidden="true">→</span></a>
+    </section>
+    <main>
+        <section aria-labelledby="destacadas-titulo">
+            <div class="titulo-seccion">
+                <div><p class="sobre-titulo">Una selección para empezar</p><h2 id="destacadas-titulo">Películas destacadas</h2></div>
+                <a class="enlace-texto" href="peliculas.html">Ver todas <span aria-hidden="true">→</span></a>
+            </div>
+            <div id="destacadas" class="catalogo"></div>
+        </section>
+        <section class="seccion-sorpresa" aria-labelledby="sorpresa-titulo">
+            <div class="sorpresa-intro"><p class="sobre-titulo">Sin decidir demasiado</p><h2 id="sorpresa-titulo">Déjate sorprender</h2><p>Te recomendamos una película o documental al azar.</p>
+                <button id="botonSorpresa" class="boton" type="button">Elegir por mí <span aria-hidden="true">✦</span></button>
+            </div>
+            <div id="sorpresa" class="catalogo catalogo-sorpresa" aria-live="polite"></div>
+        </section>
+    </main>
+    <footer><p>© 2026 CineMundo · Descubre, disfruta y aprende.</p></footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
